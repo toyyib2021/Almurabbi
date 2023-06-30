@@ -1,1 +1,1 @@
-rootProject.name = "com.schooladmin"
+rootProject.name = "com.almurabbi"

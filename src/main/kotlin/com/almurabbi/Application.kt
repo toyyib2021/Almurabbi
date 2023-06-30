@@ -1,11 +1,7 @@
-package com.schooladmin
+package com.almurabbi
 
 import io.ktor.server.application.*
-import com.schooladmin.plugins.*
-import org.ktorm.database.Database
-import org.ktorm.schema.Table
-import org.ktorm.schema.int
-import org.ktorm.schema.varchar
+import com.almurabbi.plugins.*
 
 fun main(args: Array<String>): Unit =
     io.ktor.server.netty.EngineMain.main(args)
@@ -16,11 +12,13 @@ fun Application.module() {
     configureMonitoring()
     configureSecurity()
     configureRouting()
+
+    val passGen = System.getenv("PASS")
+    val pass = "@ + $passGen"
+
+    println(pass)
+    println(passGen)
 }
 
-fun database() = Database.connect(
-    url = "jdbc:mysql://localhost:3306/pk",
-    user = "root",
-    password = "@Abibat1234"
-)
+
 

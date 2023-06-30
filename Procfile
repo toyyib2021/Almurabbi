@@ -1,0 +1,1 @@
+web:build/install/com.almurabbi.ktor-sample/bin/com.com.almurabbi.ktor-sample

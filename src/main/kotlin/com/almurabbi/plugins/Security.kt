@@ -1,4 +1,4 @@
-package com.schooladmin.plugins
+package com.almurabbi.plugins
 
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
